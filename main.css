@@ -1,0 +1,85 @@
+:root {
+  --daFont: 'Open Sans', sans-serif;
+  --daColor: hsla(218, 43%, 43%, 1);
+  --daBtnColor: hsla(218, 3%, 3%, 0.6);
+}
+
+body {
+    background-color: var(--daColor);
+    transition: all 0.8s ease .05s;
+    color: black;
+}
+
+.theNAV {
+  padding: 5px;
+  color: white;
+  text-align: right;
+}
+
+.navButtons {
+  cursor: pointer;
+  color: white;
+  padding: 0px 10px 0px 10px;
+  transition: all 0.8s ease .05s;
+}
+
+.navButtons:hover {
+  cursor: pointer;
+  color: var(--daBtnColor);
+  transition: all 0.8s ease .05s;
+}
+
+.jumbotron {
+    background-color: White;
+    padding: 50px;
+    color: var(--daColor);
+    height: 350px;
+}
+
+
+#getQuote{
+    background-color: white;
+    color: var(--daColor);
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: var(--daFont);
+    transition: all 0.3s ease .05s;
+    font-weight: bolder;
+}
+
+#getQuote:hover {
+  background: var(--daBtnColor);
+  color: var(--daColor);
+}
+
+#getQuote:focus {
+  outline: none;
+}
+
+
+.daQuote {
+    font-family: var(--daFont);
+    padding: 5px,50px,5px,50px;
+}
+
+.daAuthor {
+    font-family: var(--daFont);
+    font-style: italic;
+    padding: 5px,10px,5px,10px;
+    margin: 25px 50px 25px 50px;
+    text-align: right;
+}
+
+.daCat {
+    font-family: var(--daFont);
+    font-style: italic;
+    padding: 5px,10px,5px,10px;
+    margin: 25px 50px 25px 50px;
+    text-align: right;
+}
+
+.datitle {
+    font-family: var(--daFont);
+    margin-bottom: 50px;
+    font-weight: 100px;
+}

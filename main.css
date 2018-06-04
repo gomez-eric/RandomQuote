@@ -31,7 +31,7 @@ body {
 
 .jumbotron {
     background-color: White;
-    padding: 50px;
+    padding: 25px;
     color: var(--daColor);
     height: 350px;
 }
@@ -40,8 +40,8 @@ body {
 #getQuote{
     background-color: white;
     color: var(--daColor);
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
     font-family: var(--daFont);
     transition: all 0.3s ease .05s;
     font-weight: bolder;
@@ -59,20 +59,23 @@ body {
 
 .daQuote {
     font-family: var(--daFont);
-    padding: 5px,50px,5px,50px;
+    font-size: 13px;
+    padding: 5px,25px,5px,25px;
 }
 
 .daAuthor {
     font-family: var(--daFont);
     font-style: italic;
+    font-size: 15px;
     padding: 5px,10px,5px,10px;
-    margin: 25px 50px 25px 50px;
+    margin: 25px 25px 25px 25px;
     text-align: right;
 }
 
 .daCat {
     font-family: var(--daFont);
     font-style: italic;
+    font-size: 10px;
     padding: 5px,10px,5px,10px;
     margin: 25px 50px 25px 50px;
     text-align: right;
@@ -80,6 +83,6 @@ body {
 
 .datitle {
     font-family: var(--daFont);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-weight: 100px;
 }

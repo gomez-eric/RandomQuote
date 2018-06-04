@@ -72,7 +72,7 @@ var thisWORK = function(){
     entireUrl += quoteArray.join("+");
     entireUrl += "++-";
     entireUrl += authorArray.join("+");
-    var tinyurl = "https://www.helloworld.com/";
+    var tinyurl = "https://goo.gl/76YWfG";
     entireUrl += "++" + tinyurl;
     console.log(entireUrl);
     // Set the root colors

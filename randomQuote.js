@@ -18,9 +18,9 @@ var func_getQuote = function(){
       var obj = JSON.parse(string);
       console.log(obj);
       var icon = "<span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\"></span>"
-      $(".daQuote").html(obj.quote);
-      $(".daAuthor").html(icon + " " + obj.author);
-      $(".daCat").html("ID:" + obj.id);
+      $(".quote").html(obj.quote);
+      $(".author").html(icon + " " + obj.author);
+      $(".quoteID").html("ID:" + obj.id);
 
       // Make URL for tweet
       var theTweetUrl="https://twitter.com/intent/tweet?text=";
@@ -30,9 +30,10 @@ var func_getQuote = function(){
       twitter_url += quoteArray.join("+");
       twitter_url += "++-";
       twitter_url += authorArray.join("+");
-      var tinyurl = "https://goo.gl/76YWfG";
-      twitter_url + "++" + tinyurl;
+      twitter_url += "++https://goo.gl/76YWfG";
 
+
+      console.log(twitter_url);
     }
   });
 

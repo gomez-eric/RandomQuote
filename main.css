@@ -57,13 +57,13 @@ body {
 }
 
 
-.daQuote {
+.quote {
     font-family: var(--daFont);
     font-size: 13px;
     padding: 5px,25px,5px,25px;
 }
 
-.daAuthor {
+.author {
     font-family: var(--daFont);
     font-style: italic;
     font-size: 15px;
@@ -72,7 +72,7 @@ body {
     text-align: right;
 }
 
-.daCat {
+.quoteID {
     font-family: var(--daFont);
     font-style: italic;
     font-size: 10px;
@@ -81,7 +81,7 @@ body {
     text-align: right;
 }
 
-.datitle {
+.title {
     font-family: var(--daFont);
     margin-bottom: 25px;
     font-weight: 100px;

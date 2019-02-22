@@ -1,7 +1,7 @@
 let color_object = { "mainColor":"200" , "mainHue":"20", "secondHue":"20", "opacity":"1" };
 let twitter_url = "";
-//let apiurl = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-let apiurl = "http://quotes.stormconsultancy.co.uk/random.json";
+let apiurl = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
+//let apiurl = "http://quotes.stormconsultancy.co.uk/random.json";
 
 var func_getQuote = function(){
   makingPal(); // Randomly generate colors
@@ -18,14 +18,14 @@ var func_getQuote = function(){
       var obj = JSON.parse(string);
       console.log(obj);
       var icon = "<span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\"></span>"
-      $(".quote").html(obj.quote);
-      $(".author").html(icon + " " + obj.author);
-      $(".quoteID").html("ID:" + obj.id);
+      $(".quote").html(obj.quoteText);
+      $(".author").html(icon + " " + obj.quoteAuthor);
+      //$(".quoteID").html("ID:" + obj.id);
 
       // Make URL for tweet
       var theTweetUrl="https://twitter.com/intent/tweet?text=";
-      var quoteArray = obj.quote.split(" ");
-      var authorArray = obj.author.split(" ");
+      var quoteArray = obj.quoteText.split(" ");
+      var authorArray = obj.quoteAuthor.split(" ");
       twitter_url = theTweetUrl;
       twitter_url += quoteArray.join("+");
       twitter_url += "++-";

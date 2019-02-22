@@ -12,7 +12,7 @@ var func_getQuote = function(){
 
   $.ajax({
     url: apiurl,
-    dataType: 'json',
+    dataType: 'jsonp',
     success: function(jsonp){
       var string = (JSON.stringify(jsonp));
       var obj = JSON.parse(string);
